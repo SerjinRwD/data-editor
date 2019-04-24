@@ -13,12 +13,12 @@ const webpack = require('webpack');
 const path = require('path');
 
 const bundleFolder = "./wwwroot/assets/";
-const srcFolder = "./App/";
+const srcFolder = "./ClientApp/";
 
 module.exports = {
     mode: 'development',
     entry: [
-        srcFolder + "index.js"
+        srcFolder + "main.js"
     ],
     devtool: "source-map",
     output: {
