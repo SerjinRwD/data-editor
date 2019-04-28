@@ -4,16 +4,15 @@
             {{ message }}
         </div>
         <div>
-            <Counter text="Clicks" />
+            Persistent counter:
         </div>
         <div>
-            <button class="button is-primary" @click.passive="onBtnClick" :class="{ 'is-loading': isBusy }">Yo!</button>
+            <button type="button" class="button is-primary" @click="onClick">Clicks: {{ persist }}</button>
         </div>
     </div>
 </template>
 <script>
-    import Counter from '../../Components/Counter.vue';
-
+    import store from '../../store';
     export default {
         data: function () {
             return {
@@ -21,15 +20,15 @@
                 isBusy: false
             };
         },
-        methods: {
-            onBtnClick: function () {
-                this.isBusy = true;
-                alert('Hi there!');
-                this.isBusy = false;
+        computed: {
+            persist: function () {
+                return store.state.count;
             }
         },
-        components: {
-            Counter: Counter
+        methods: {
+            onClick: function () {
+                store.commit('INC');
+            }
         }
-    };
+    }
 </script>
