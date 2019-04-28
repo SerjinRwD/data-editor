@@ -1,5 +1,5 @@
 ﻿<template>
-    <div>
+    <div class="pin-top">
         A lot of music stuff
     </div>
 </template>

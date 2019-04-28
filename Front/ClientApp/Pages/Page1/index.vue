@@ -1,5 +1,5 @@
 ﻿<template>
-    <div>
+    <div class="pin-top">
         <div>
             {{ message }}
         </div>

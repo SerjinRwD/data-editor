@@ -1,5 +1,5 @@
 ﻿<template>
-    <div>
+    <div class="pin-top">
         <div>PaGe 2 :(</div>
         <div>
             <button class="button is-primary" @click="showModal">Show modal</button>

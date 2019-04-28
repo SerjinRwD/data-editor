@@ -1,5 +1,5 @@
 ﻿<template>
-    <div>
+    <div class="pin-top">
         Some documents to read
     </div>
 </template>

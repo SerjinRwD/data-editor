@@ -1,9 +1,5 @@
 ﻿<template>
-    <div>
-        The Home Page!
+    <div class="pin-top">
+        <p>The Home Page!</p>
     </div>
 </template>
-<script>
-    export default {
-    };
-</script>

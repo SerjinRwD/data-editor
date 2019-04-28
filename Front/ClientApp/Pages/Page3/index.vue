@@ -1,5 +1,5 @@
 ﻿<template>
-    <div>
+    <div class="pin-top">
         <div class="tabs">
             <ul>
                 <router-link tag="li" active-class="is-active" to="/page3/pictures">
@@ -29,7 +29,11 @@
             </ul>
         </div>
         <div class="container">
-            <router-view></router-view>
+            <transition name="custom-classes-transition"
+                        enter-active-class="animated faster zoomInLeft"
+                        leave-active-class="animated faster zoomOutRight">
+                <router-view></router-view>
+            </transition>
         </div>
     </div>
 </template>

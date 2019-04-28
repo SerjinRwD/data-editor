@@ -1,9 +1,11 @@
 ﻿<template>
-    <button class="button is-primary" v-on:click="onClick">
+    <button class="button is-primary" @click="onClick">
         {{ text }}: {{ counter }}
     </button>
 </template>
 <script>
+    import store from '../store';
+
     export default {
         data: function () {
             return {

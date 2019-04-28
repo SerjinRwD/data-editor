@@ -1,0 +1,13 @@
+﻿.pin-top {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.map-background {
+    background-image: url(images/map.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
